@@ -17,5 +17,6 @@ namespace Xamarin.MvvmCross.LibraryPlayground.Droid
             : base(Resource.Layout.SplashScreen)
         {
         }
+
     }
 }
