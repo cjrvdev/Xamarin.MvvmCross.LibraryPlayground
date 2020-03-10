@@ -19,7 +19,7 @@ namespace Xamarin.MvvmCross.LibraryPlayground.Core
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
 
-            RegisterAppStart<FirstViewModel>();
+            RegisterAppStart<LandingViewModel>();
         }
     }
 }

@@ -13,16 +13,6 @@ namespace Xamarin.MvvmCross.LibraryPlayground.Droid.Views
             base.OnCreate(bundle);
 
             SetContentView(LayoutResource);
-
-            Toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
-            if (Toolbar != null)
-            {
-                SetSupportActionBar(Toolbar);
-                SupportActionBar.SetDisplayHomeAsUpEnabled(true);
-                SupportActionBar.SetHomeButtonEnabled(true);
-            }
         }
-
-        protected abstract int LayoutResource { get; }
     }
 }

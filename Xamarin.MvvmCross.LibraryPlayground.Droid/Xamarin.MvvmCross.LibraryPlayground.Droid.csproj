@@ -63,7 +63,7 @@
     <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="28.0.0.3" />
     <PackageReference Include="Xamarin.Android.Support.v7.RecyclerView" Version="28.0.0.3" />
     <PackageReference Include="Xamarin.Android.Support.Vector.Drawable" Version="28.0.0.3" />
-    <PackageReference Include="Xamarin.Build.Download" Version="0.4.7" />
+    <PackageReference Include="Xamarin.Build.Download" Version="0.4.11" />
     <PackageReference Include="Xamarin.Essentials">
       <Version>1.5.1</Version>
     </PackageReference>
@@ -96,9 +96,7 @@
     <AndroidResource Include="Resources\mipmap-xhdpi\ic_launcher.png" />
     <AndroidResource Include="Resources\mipmap-xxhdpi\ic_launcher.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher.png" />
-    <AndroidResource Include="Resources\layout\FirstView.axml" />
     <AndroidResource Include="Resources\layout\SplashScreen.axml" />
-    <AndroidResource Include="Resources\layout\toolbar.axml" />
     <AndroidResource Include="Resources\values\arrays.xml" />
     <AndroidResource Include="Resources\values\colors.xml" />
     <AndroidResource Include="Resources\values\dimens.xml" />
@@ -118,18 +116,20 @@
     <Compile Include="SplashScreen.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Views\Base\BaseActivity.cs" />
-    <Compile Include="Views\FirstView.cs" />
     <Compile Include="Views\BaseView.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Views\Landing\LandingView.cs" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\AboutAssets.txt" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\splashscreen.xml" />
+    <AndroidResource Include="Resources\drawable\splash_background.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\splash_background.png" />
+    <AndroidResource Include="Resources\layout\landing_activity.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
