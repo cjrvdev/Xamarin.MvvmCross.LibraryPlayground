@@ -110,6 +110,10 @@
       <SubType></SubType>
       <Generator></Generator>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\plugin_messenger_fragment.axml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />
@@ -128,6 +132,7 @@
     <Compile Include="Views\Plugins\PluginNavigationView.cs" />
     <Compile Include="Views\Base\BaseFragment.cs" />
     <Compile Include="Views\Landing\LandingView.cs" />
+    <Compile Include="Views\Plugins\PluginMessengerView.cs" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\AboutAssets.txt" />
