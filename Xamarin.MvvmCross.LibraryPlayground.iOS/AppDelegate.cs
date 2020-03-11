@@ -1,8 +1,8 @@
-﻿using MvvmCross.Core.ViewModels;
-using MvvmCross.iOS.Platform;
-using MvvmCross.Platform;
-using Foundation;
+﻿using Foundation;
 using UIKit;
+using MvvmCross.Platforms.Ios.Core;
+using MvvmCross;
+using MvvmCross.ViewModels;
 
 namespace Xamarin.MvvmCross.LibraryPlayground.iOS
 {
@@ -19,8 +19,8 @@ namespace Xamarin.MvvmCross.LibraryPlayground.iOS
         {
             Window = new UIWindow(UIScreen.MainScreen.Bounds);
 
-            var setup = new Setup(this, Window);
-            setup.Initialize();
+            var setup = new Setup();
+            setup.PlatformInitialize(this, Window);
 
             var startup = Mvx.Resolve<IMvxAppStart>();
             startup.Start();

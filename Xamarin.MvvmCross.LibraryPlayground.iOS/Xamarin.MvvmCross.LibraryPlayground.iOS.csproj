@@ -85,13 +85,9 @@
     <CodesignKey>iPhone Distribution</CodesignKey>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="MvvmCross" Version="5.2.1" />
-    <PackageReference Include="MvvmCross.Binding" Version="5.2.1" />
-    <PackageReference Include="MvvmCross.Core" Version="5.2.1" />
-    <PackageReference Include="MvvmCross.Platform" Version="5.2.1" />
+    <PackageReference Include="MvvmCross" Version="6.4.2" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DebugTrace.cs" />
     <Compile Include="LinkerPleaseInclude.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
@@ -191,7 +187,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Xamarin.MvvmCross.LibraryPlayground.Core\Xamarin.MvvmCross.LibraryPlayground.Core.csproj">
-      <Project>{8175864B-E4B9-42C1-BAB0-2E9F901D5B25}</Project>
+      <Project>{C6EBFAB8-EB05-46A8-8A98-8913FD0B2635}</Project>
       <Name>Xamarin.MvvmCross.LibraryPlayground.Core</Name>
     </ProjectReference>
   </ItemGroup>

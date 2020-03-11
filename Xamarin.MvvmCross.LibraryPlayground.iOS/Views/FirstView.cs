@@ -1,7 +1,6 @@
 ﻿using System;
 using MvvmCross.Binding.BindingContext;
-using MvvmCross.iOS.Views;
-using Xamarin.MvvmCross.LibraryPlayground.Core.ViewModels;
+using MvvmCross.Platforms.Ios.Views;
 
 namespace Xamarin.MvvmCross.LibraryPlayground.iOS.Views
 {
@@ -15,11 +14,6 @@ namespace Xamarin.MvvmCross.LibraryPlayground.iOS.Views
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
-
-            var set = this.CreateBindingSet<FirstView, FirstViewModel>();
-            set.Bind(Label).To(vm => vm.Hello);
-            set.Bind(TextField).To(vm => vm.Hello);
-            set.Apply();
         }
     }
 }
