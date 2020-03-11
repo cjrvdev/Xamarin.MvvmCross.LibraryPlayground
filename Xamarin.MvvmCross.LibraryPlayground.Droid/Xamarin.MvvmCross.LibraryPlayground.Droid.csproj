@@ -42,7 +42,6 @@
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
     <AndroidLinkTool>r8</AndroidLinkTool>
     <AotAssemblies>true</AotAssemblies>
-    <EnableLLVM>false</EnableLLVM>
     <AndroidEnableProfiledAot>true</AndroidEnableProfiledAot>
     <AndroidUseAapt2>true</AndroidUseAapt2>
   </PropertyGroup>
@@ -64,9 +63,7 @@
     <PackageReference Include="Xamarin.Android.Support.v7.RecyclerView" Version="28.0.0.3" />
     <PackageReference Include="Xamarin.Android.Support.Vector.Drawable" Version="28.0.0.3" />
     <PackageReference Include="Xamarin.Build.Download" Version="0.4.11" />
-    <PackageReference Include="Xamarin.Essentials">
-      <Version>1.5.1</Version>
-    </PackageReference>
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.1" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
@@ -79,7 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Xamarin.MvvmCross.LibraryPlayground.Core\Xamarin.MvvmCross.LibraryPlayground.Core.csproj">
-      <Project>{8175864B-E4B9-42C1-BAB0-2E9F901D5B25}</Project>
+      <Project>{C6EBFAB8-EB05-46A8-8A98-8913FD0B2635}</Project>
       <Name>Xamarin.MvvmCross.LibraryPlayground.Core</Name>
     </ProjectReference>
   </ItemGroup>
