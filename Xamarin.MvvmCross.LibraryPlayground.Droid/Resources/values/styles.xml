@@ -24,7 +24,7 @@
       <item name="android:windowContentOverlay">@null</item>
     -->
   </style>
-  <style name="Theme.Splash" parent="Theme.AppCompat">
+  <style name="Theme.Splash" parent="MyTheme.Base">
     <item name="android:windowBackground">@drawable/splash_background</item>
     <item name="android:windowNoTitle">true</item>
   </style>

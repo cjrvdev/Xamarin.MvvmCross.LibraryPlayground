@@ -1,30 +1,14 @@
-﻿
-using Android.App;
-using Android.Content.PM;
-using Android.OS;
-using Android.Support.V7.Widget;
+﻿using System;
+using Android.Runtime;
+using MvvmCross.Platforms.Android.Presenters.Attributes;
 using Xamarin.MvvmCross.LibraryPlayground.Core.ViewModels;
 
 namespace Xamarin.MvvmCross.LibraryPlayground.Droid.Views
 {
-    [Activity(ScreenOrientation = ScreenOrientation.Portrait,
-              LaunchMode = LaunchMode.SingleTask)]
-    public class LandingView : BaseActivity<LandingViewModel>
+    [MvxFragmentPresentation(typeof(MainViewModel), Resource.Id.fragment_container, false)]
+    [Register("Xamarin.MvvmCross.LibraryPlayground.Droid.Views.LandingView")]
+    public class LandingView : BaseFragment<LandingViewModel>
     {
-        protected override int LayoutResource => Resource.Layout.landing_activity;
-
-        protected override void OnCreate(Bundle bundle)
-        {
-            base.OnCreate(bundle);
-
-            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
-            if (toolbar != null)
-            {
-                SetSupportActionBar(toolbar);
-                // Hide back button
-                SupportActionBar.SetDisplayHomeAsUpEnabled(false);
-                SupportActionBar.SetHomeButtonEnabled(true);
-            }
-        }
+        protected override int FragmentId => Resource.Layout.landing_fragment;
     }
 }

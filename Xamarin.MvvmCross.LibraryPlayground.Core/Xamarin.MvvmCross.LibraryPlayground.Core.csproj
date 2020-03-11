@@ -11,4 +11,7 @@
     <PackageReference Include="Xamarin.Essentials" Version="1.5.1" />
   </ItemGroup>
     
+  <ItemGroup>
+    <Folder Include="ViewModels\PluginNavigation\" />
+  </ItemGroup>
 </Project>
