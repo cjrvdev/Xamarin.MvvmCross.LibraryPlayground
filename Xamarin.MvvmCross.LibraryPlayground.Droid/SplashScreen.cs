@@ -1,5 +1,6 @@
 using Android.App;
 using Android.Content.PM;
+using MvvmCross.Droid.Support.V7.AppCompat;
 using MvvmCross.Platforms.Android.Views;
 
 namespace Xamarin.MvvmCross.LibraryPlayground.Droid
@@ -11,7 +12,7 @@ namespace Xamarin.MvvmCross.LibraryPlayground.Droid
         , Theme = "@style/Theme.Splash"
         , NoHistory = true
         , ScreenOrientation = ScreenOrientation.Portrait)]
-    public class SplashScreen : MvxSplashScreenActivity
+    public class SplashScreen : MvxSplashScreenAppCompatActivity
     {
         public SplashScreen()
             : base(Resource.Layout.SplashScreen)
